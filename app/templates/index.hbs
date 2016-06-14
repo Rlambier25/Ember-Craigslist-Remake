@@ -1,0 +1,14 @@
+<h1> Welcome to LISTR </h1>
+
+<h4>A Marketplace for selling stuff and buying stuff....get your stuff on!</h4>
+
+<ul>
+    {{#each model as |post|}}
+    {{post-tile post=post update="update" destroyPost="destroyPost"}}
+    {{/each}}
+</ul>
+
+{{new-post save2="save3"}}
+
+
+{{#link-to 'post'}}Back To Categories{{/link-to}}
